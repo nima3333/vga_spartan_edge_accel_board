@@ -17,9 +17,6 @@ proc create_report { reportName command } {
     send_msg_id runtcl-5 warning "$msg"
   }
 }
-set_param chipscope.maxJobs 2
-set_msg_config -id {Synth 8-256} -limit 10000
-set_msg_config -id {Synth 8-638} -limit 10000
 create_project -in_memory -part xc7s15ftgb196-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -34,6 +31,7 @@ set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
   C:/Users/Esmail/Desktop/test_spartan/test_spartan.srcs/sources_1/new/clock_divider.sv
   C:/Users/Esmail/Desktop/test_spartan/test_spartan.srcs/sources_1/new/h_sync.sv
+  C:/Users/Esmail/Desktop/test_spartan/test_spartan.srcs/sources_1/new/v_sync.sv
   C:/Users/Esmail/Desktop/test_spartan/test_spartan.srcs/sources_1/new/top.sv
 }
 # Mark all dcp files as not used in implementation to prevent them from being

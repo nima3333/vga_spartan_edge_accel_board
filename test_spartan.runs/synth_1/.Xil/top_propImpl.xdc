@@ -1,6 +1,4 @@
 set_property SRC_FILE_INFO {cfile:C:/Users/Esmail/Desktop/vivado-tutorial-master/vivado_tutorial.srcs/constrs_1/new/test_pin.xdc rfile:../../../../vivado-tutorial-master/vivado_tutorial.srcs/constrs_1/new/test_pin.xdc id:1} [current_design]
-set_property src_info {type:XDC file:1 line:10 export:INPUT save:INPUT read:READ} [current_design]
-set_property IOSTANDARD LVCMOS33 [get_ports IO4]
 set_property src_info {type:XDC file:1 line:11 export:INPUT save:INPUT read:READ} [current_design]
 set_property IOSTANDARD LVCMOS33 [get_ports IO5]
 set_property src_info {type:XDC file:1 line:12 export:INPUT save:INPUT read:READ} [current_design]

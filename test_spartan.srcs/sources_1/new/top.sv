@@ -28,7 +28,8 @@ module top(
         output reg IO0,
         output reg IO1,
         output reg IO2,
-        output reg IO3
+        output reg IO3,
+        output reg IO4
     );
 
     logic new_clk;
@@ -47,12 +48,12 @@ module top(
     
     //v_sync
     logic v_sync;
-    v_sync module2(line_detector, n_reset, h_sync);
+    v_sync module2(line_detector, n_reset, v_sync);
 
     always @(*)begin
-        IO0 <= 1'b1;
+        IO0 <= 1'b0;
         IO1 <= 1'b0;
-        IO2 <= new_clk;
+        IO2 <= 1'b1;
         IO3 <= h_sync;
         IO4 <= v_sync;
     end
