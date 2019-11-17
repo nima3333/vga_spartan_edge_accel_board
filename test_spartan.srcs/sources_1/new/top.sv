@@ -32,23 +32,29 @@ module top(
     );
 
     logic new_clk;
-    clock_divider divider(sys_clk, n_reset, new_clk, 32'd100000000);
+    clock_divider divider(sys_clk, n_reset, new_clk, 32'd4);
     
     //Some tests
-    always @(posedge sys_clk)begin
+    always @(posedge new_clk)begin
         LED1 <= !key[0];
         LED2 <= !key[1];
     end
     
     //h-sync
     logic h_sync;
-    h_sync module1(sys_clk, n_reset, h_sync);
+    logic line_detector;
+    h_sync module1(new_clk, n_reset, h_sync, line_detector);
     
+    //v_sync
+    logic v_sync;
+    v_sync module2(line_detector, n_reset, h_sync);
+
     always @(*)begin
         IO0 <= 1'b1;
         IO1 <= 1'b0;
         IO2 <= new_clk;
         IO3 <= h_sync;
+        IO4 <= v_sync;
     end
     
     
