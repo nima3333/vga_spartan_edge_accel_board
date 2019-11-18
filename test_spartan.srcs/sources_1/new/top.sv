@@ -35,15 +35,17 @@ module top(
     logic new_clk;
     clock_divider divider(sys_clk, n_reset, new_clk, 32'd4);
     
-    //h-sync
-    logic h_sync;
-    logic line_detector;
-    h_sync module1(new_clk, n_reset, h_sync, line_detector);
+//    //h-sync
+//    logic h_sync;
+//    logic line_detector;
+//    h_sync module1(new_clk, n_reset, h_sync, line_detector);
     
-    //v_sync
+//    //v_sync
+//    logic v_sync;
+//    v_sync module2(line_detector, n_reset, v_sync);
+    logic h_sync;
     logic v_sync;
-    v_sync module2(line_detector, n_reset, v_sync);
-
+    vga_controller my_controller(sys_clk, n_reset, h_sync, v_sync);
     //Some tests
     always @(posedge new_clk)begin
         LED1 <= !key[0];

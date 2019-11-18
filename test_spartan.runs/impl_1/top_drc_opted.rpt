@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Nov 18 01:59:36 2019
+| Date         : Mon Nov 18 02:37:57 2019
 | Host         : HP-ESMAIL running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 | Design       : top
@@ -49,8 +49,8 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT divider/LED1_i_2 is driving clock pin of 14 cells. This could lead to large hold time violations. Involved cells are:
-LED1_reg, LED2_reg, module1/counter_reg[0], module1/counter_reg[1], module1/counter_reg[2], module1/counter_reg[3], module1/counter_reg[4], module1/counter_reg[5], module1/counter_reg[6], module1/counter_reg[7], module1/counter_reg[8], module1/counter_reg[9], module1/h_sync_reg, module1/line_detector_reg
+A LUT divider/LED1_i_2 is driving clock pin of 2 cells. This could lead to large hold time violations. Involved cells are:
+LED1_reg, LED2_reg
 Related violations: <none>
 
 
