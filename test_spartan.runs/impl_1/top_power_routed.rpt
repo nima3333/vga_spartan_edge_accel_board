@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Sun Nov 17 22:09:43 2019
+| Date             : Mon Nov 18 02:00:10 2019
 | Host             : HP-ESMAIL running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 1.759        |
+| Total On-Chip Power (W)  | 2.312        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 1.738        |
+| Dynamic (W)              | 2.290        |
 | Device Static (W)        | 0.021        |
 | Effective TJA (C/W)      | 3.4          |
-| Max Ambient (C)          | 79.1         |
-| Junction Temperature (C) | 30.9         |
+| Max Ambient (C)          | 77.2         |
+| Junction Temperature (C) | 32.8         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.136 |       93 |       --- |             --- |
-|   LUT as Logic |     0.102 |       27 |      8000 |            0.34 |
-|   CARRY4       |     0.020 |       12 |      2000 |            0.60 |
-|   Register     |     0.008 |       34 |     16000 |            0.21 |
+| Slice Logic    |     0.397 |      157 |       --- |             --- |
+|   LUT as Logic |     0.354 |       56 |      8000 |            0.70 |
+|   CARRY4       |     0.019 |       12 |      2000 |            0.60 |
+|   Register     |     0.018 |       57 |     16000 |            0.36 |
 |   BUFG         |     0.006 |        1 |        16 |            6.25 |
-|   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.133 |       57 |       --- |             --- |
-| I/O            |     1.469 |       10 |       100 |           10.00 |
+|   Others       |     0.000 |        6 |       --- |             --- |
+| Signals        |     0.249 |      101 |       --- |             --- |
+| I/O            |     1.644 |       11 |       100 |           11.00 |
 | Static Power   |     0.021 |          |           |                 |
-| Total          |     1.759 |          |           |                 |
+| Total          |     2.312 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.285 |       0.281 |      0.004 |
-| Vccaux    |       1.800 |     0.061 |       0.053 |      0.007 |
-| Vcco33    |       3.300 |     0.413 |       0.412 |      0.001 |
+| Vccint    |       1.000 |     0.663 |       0.658 |      0.005 |
+| Vccaux    |       1.800 |     0.067 |       0.060 |      0.007 |
+| Vcco33    |       3.300 |     0.463 |       0.462 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -136,8 +136,10 @@ Table of Contents
 +-----------+-----------+
 | Name      | Power (W) |
 +-----------+-----------+
-| top       |     1.738 |
-|   divider |     0.233 |
+| top       |     2.290 |
+|   divider |     0.201 |
+|   module1 |     0.176 |
+|   module2 |     0.234 |
 +-----------+-----------+
 
 

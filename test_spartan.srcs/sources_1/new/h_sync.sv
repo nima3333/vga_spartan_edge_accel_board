@@ -26,29 +26,25 @@ module h_sync (
     output reg h_sync,
     output reg line_detector
 );
-    logic [15:0] counter = 0;
-    logic signal;
-    
-    assign h_sync = signal;
-    
+    logic [9:0] counter = 0;
+        
     always@(posedge clk) begin
         if(!n_reset) begin
             line_detector <= 1'd0;
-            counter <= 16'd0;
+            counter <= 10'd0;
+        end
+        else begin
+          counter <= counter + 10'd1;
+          line_detector <= 1'd0;
+          if(counter == 10'd519 ) begin
+            counter <= 10'd0;
+            line_detector <= 1'd1;
+          end
         end
     end
     
-    always@(posedge clk) begin
-      counter <= counter + 16'd1;
-      line_detector <= 1'd0;
-      if(counter == 16'd519 ) begin
-        counter <= 16'd0;
-        line_detector <= 1'd1;
-      end
-    end
-    
     always @ (posedge clk) begin
-      if(counter < 16'd427 || counter > 16'd487) signal <= 1'b0;
-      else signal <= 1'b1;
+      if(counter < 10'd427 || counter > 10'd487) h_sync <= 1'b0;
+      else h_sync <= 1'b1;
     end
 endmodule

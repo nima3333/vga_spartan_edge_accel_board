@@ -35,12 +35,6 @@ module top(
     logic new_clk;
     clock_divider divider(sys_clk, n_reset, new_clk, 32'd4);
     
-    //Some tests
-    always @(posedge new_clk)begin
-        LED1 <= !key[0];
-        LED2 <= !key[1];
-    end
-    
     //h-sync
     logic h_sync;
     logic line_detector;
@@ -50,6 +44,12 @@ module top(
     logic v_sync;
     v_sync module2(line_detector, n_reset, v_sync);
 
+    //Some tests
+    always @(posedge new_clk)begin
+        LED1 <= !key[0];
+        LED2 <= !key[1];
+    end
+    
     always @(*)begin
         IO0 <= 1'b0;
         IO1 <= 1'b0;

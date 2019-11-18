@@ -25,26 +25,22 @@ module v_sync (
     input n_reset,
     output reg v_sync
 );
-    logic [15:0] counter = 0;
-    logic signal;
-    
-    assign v_sync = signal;
-    
+    logic [9:0] counter = 0;
+        
     always@(posedge clk) begin
         if(!n_reset) begin
-            counter <= 16'd0;
+            counter <= 10'd0;
+        end
+        else begin
+          counter <= counter + 10'd1;
+          if(counter == 10'd332 ) begin
+            counter <= 10'd0;
+          end
         end
     end
     
-    always@(posedge clk) begin
-      counter <= counter + 16'd1;
-      if(counter == 16'd332 ) begin
-        counter <= 16'd0;
-      end
-    end
-    
     always @ (posedge clk) begin
-      if(counter < 16'd317 || counter > 16'd320) signal <= 1'b0;
-      else signal <= 1'b1;
+      if(counter < 10'd317 || counter > 10'd320) v_sync <= 1'b0;
+      else v_sync <= 1'b1;
     end
 endmodule
