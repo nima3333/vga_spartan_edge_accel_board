@@ -32,7 +32,6 @@ set_property ip_output_repo c:/Users/Esmail/Desktop/test_spartan/test_spartan.ca
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
   C:/Users/Esmail/Desktop/test_spartan/test_spartan.srcs/sources_1/new/clock_divider.sv
-  C:/Users/Esmail/Desktop/test_spartan/test_spartan.srcs/sources_1/new/vga_controller.sv
   C:/Users/Esmail/Desktop/test_spartan/test_spartan.srcs/sources_1/new/top.sv
 }
 # Mark all dcp files as not used in implementation to prevent them from being
