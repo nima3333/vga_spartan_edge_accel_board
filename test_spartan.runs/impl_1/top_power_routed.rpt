@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -------------------------------------------------------------------------------------------------------------------------------
 | Tool Version     : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date             : Tue Nov 26 18:17:26 2019
+| Date             : Tue Nov 26 19:27:37 2019
 | Host             : Demon running 64-bit major release  (build 9200)
 | Command          : report_power -file top_power_routed.rpt -pb top_power_summary_routed.pb -rpx top_power_routed.rpx
 | Design           : top
@@ -30,14 +30,14 @@ Table of Contents
 ----------
 
 +--------------------------+--------------+
-| Total On-Chip Power (W)  | 3.254        |
+| Total On-Chip Power (W)  | 1.886        |
 | Design Power Budget (W)  | Unspecified* |
 | Power Budget Margin (W)  | NA           |
-| Dynamic (W)              | 3.233        |
-| Device Static (W)        | 0.022        |
+| Dynamic (W)              | 1.865        |
+| Device Static (W)        | 0.021        |
 | Effective TJA (C/W)      | 3.4          |
-| Max Ambient (C)          | 74.0         |
-| Junction Temperature (C) | 36.0         |
+| Max Ambient (C)          | 78.6         |
+| Junction Temperature (C) | 31.4         |
 | Confidence Level         | Low          |
 | Setting File             | ---          |
 | Simulation Activity File | ---          |
@@ -52,16 +52,16 @@ Table of Contents
 +----------------+-----------+----------+-----------+-----------------+
 | On-Chip        | Power (W) | Used     | Available | Utilization (%) |
 +----------------+-----------+----------+-----------+-----------------+
-| Slice Logic    |     0.086 |       79 |       --- |             --- |
-|   LUT as Logic |     0.053 |       23 |      8000 |            0.29 |
-|   CARRY4       |     0.018 |       12 |      2000 |            0.60 |
-|   Register     |     0.009 |       34 |     16000 |            0.21 |
+| Slice Logic    |     0.224 |      154 |       --- |             --- |
+|   LUT as Logic |     0.187 |       57 |      8000 |            0.71 |
+|   CARRY4       |     0.019 |       12 |      2000 |            0.60 |
+|   Register     |     0.013 |       57 |     16000 |            0.36 |
 |   BUFG         |     0.006 |        1 |        16 |            6.25 |
-|   Others       |     0.000 |        4 |       --- |             --- |
-| Signals        |     0.132 |       55 |       --- |             --- |
-| I/O            |     3.015 |       12 |       100 |           12.00 |
-| Static Power   |     0.022 |          |           |                 |
-| Total          |     3.254 |          |           |                 |
+|   Others       |     0.000 |        6 |       --- |             --- |
+| Signals        |     0.166 |       95 |       --- |             --- |
+| I/O            |     1.475 |       12 |       100 |           12.00 |
+| Static Power   |     0.021 |          |           |                 |
+| Total          |     1.886 |          |           |                 |
 +----------------+-----------+----------+-----------+-----------------+
 
 
@@ -71,9 +71,9 @@ Table of Contents
 +-----------+-------------+-----------+-------------+------------+
 | Source    | Voltage (V) | Total (A) | Dynamic (A) | Static (A) |
 +-----------+-------------+-----------+-------------+------------+
-| Vccint    |       1.000 |     0.235 |       0.229 |      0.005 |
-| Vccaux    |       1.800 |     0.117 |       0.110 |      0.007 |
-| Vcco33    |       3.300 |     0.851 |       0.850 |      0.001 |
+| Vccint    |       1.000 |     0.407 |       0.402 |      0.005 |
+| Vccaux    |       1.800 |     0.061 |       0.054 |      0.007 |
+| Vcco33    |       3.300 |     0.415 |       0.414 |      0.001 |
 | Vcco25    |       2.500 |     0.000 |       0.000 |      0.000 |
 | Vcco18    |       1.800 |     0.000 |       0.000 |      0.000 |
 | Vcco15    |       1.500 |     0.000 |       0.000 |      0.000 |
@@ -133,11 +133,12 @@ Table of Contents
 3.1 By Hierarchy
 ----------------
 
-+----------+-----------+
-| Name     | Power (W) |
-+----------+-----------+
-| top      |     3.233 |
-|   ctest3 |     0.182 |
-+----------+-----------+
++-----------------+-----------+
+| Name            | Power (W) |
++-----------------+-----------+
+| top             |     1.865 |
+|   divider       |     0.221 |
+|   my_controller |     0.132 |
++-----------------+-----------+
 
 

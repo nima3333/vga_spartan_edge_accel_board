@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Nov 26 18:17:26 2019
+| Date         : Tue Nov 26 19:27:37 2019
 | Host         : Demon running 64-bit major release  (build 9200)
 | Command      : report_timing_summary -max_paths 10 -file top_timing_summary_routed.rpt -pb top_timing_summary_routed.pb -rpx top_timing_summary_routed.rpx -warn_on_violation
 | Design       : top
@@ -56,6 +56,70 @@ Table of Contents
 --------------------
  There are 34 register/latch pins with no clock driven by root clock pin: sys_clk (HIGH)
 
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[0]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[10]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[11]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[12]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[13]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[14]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[15]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[16]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[17]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[18]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[19]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[1]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[20]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[21]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[22]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[23]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[24]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[25]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[26]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[27]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[28]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[29]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[2]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[30]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[31]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[3]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[4]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[5]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[6]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[7]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[8]/Q (HIGH)
+
+ There are 23 register/latch pins with no clock driven by root clock pin: divider/counter_reg[9]/Q (HIGH)
+
 
 2. checking constant_clock
 --------------------------
@@ -69,7 +133,7 @@ Table of Contents
 
 4. checking unconstrained_internal_endpoints
 --------------------------------------------
- There are 66 pins that are not constrained for maximum delay. (HIGH)
+ There are 115 pins that are not constrained for maximum delay. (HIGH)
 
  There are 0 pins that are not constrained for maximum delay due to constant clock.
 
@@ -83,7 +147,7 @@ Table of Contents
 
 6. checking no_output_delay
 ---------------------------
- There are 3 ports with no output delay specified. (HIGH)
+ There are 4 ports with no output delay specified. (HIGH)
 
  There are 0 ports with no output delay but user has a false path constraint
 

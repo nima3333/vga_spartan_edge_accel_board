@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 1ms / 1us
 //////////////////////////////////////////////////////////////////////////////////
 // Company: 
 // Engineer: 
@@ -34,24 +34,24 @@ module top(
         output reg IO6
     );
     
-//    logic new_clk;
-//    clock_divider divider(sys_clk, n_reset, new_clk, 32'd2);
+    logic new_clk;
+    clock_divider divider(sys_clk, n_reset, new_clk, 32'd2);
 
-//    logic h_sync;
-//    logic v_sync;
-//    vga_controller my_controller(new_clk, n_reset, h_sync, v_sync);
+    logic h_sync;
+    logic v_sync;
+    vga_controller my_controller(new_clk, h_sync, v_sync);
+    
     //Some tests
     always @(posedge sys_clk)begin
-        LED1 <= key[0];
-        LED2 <= key[1];
+        LED1 <= !key[0];
+        LED2 <= !key[1];
     end
     
-    logic test3;
-    
-    clock_divider ctest3(sys_clk, n_reset, test3, 32'd100000000);
-    
-    assign IO0 = test3;    
-    assign IO1 = 1'b1;
+    assign IO0 = h_sync;    
+    assign IO1 = v_sync;
+    assign IO2 = 1'b1;
+    assign IO3 = 1'b1;
+    assign IO4 = 1'b1;
 
     
 endmodule
