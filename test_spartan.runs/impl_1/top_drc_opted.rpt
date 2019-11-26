@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Nov 26 19:27:24 2019
+| Date         : Tue Nov 26 20:15:11 2019
 | Host         : Demon running 64-bit major release  (build 9200)
 | Command      : report_drc -file top_drc_opted.rpt -pb top_drc_opted.pb -rpx top_drc_opted.rpx
 | Design       : top
@@ -49,8 +49,8 @@ Related violations: <none>
 
 PLHOLDVIO-2#1 Warning
 Non-Optimal connections which could lead to hold violations  
-A LUT divider/h_sync_signal_i_2 is driving clock pin of 23 cells. This could lead to large hold time violations. Involved cells are:
-my_controller/h_counter_reg[0], my_controller/h_counter_reg[10], my_controller/h_counter_reg[1], my_controller/h_counter_reg[2], my_controller/h_counter_reg[3], my_controller/h_counter_reg[4], my_controller/h_counter_reg[5], my_controller/h_counter_reg[6], my_controller/h_counter_reg[7], my_controller/h_counter_reg[8], my_controller/h_counter_reg[9], my_controller/h_sync_signal_reg, my_controller/v_counter_reg[0], my_controller/v_counter_reg[1], my_controller/v_counter_reg[2] (the first 15 of 23 listed)
+A LUT divider/h_sync_signal_i_2 is driving clock pin of 24 cells. This could lead to large hold time violations. Involved cells are:
+my_controller/h_counter_reg[0], my_controller/h_counter_reg[10], my_controller/h_counter_reg[1], my_controller/h_counter_reg[2], my_controller/h_counter_reg[3], my_controller/h_counter_reg[4], my_controller/h_counter_reg[5], my_controller/h_counter_reg[6], my_controller/h_counter_reg[7], my_controller/h_counter_reg[8], my_controller/h_counter_reg[9], my_controller/h_sync_signal_reg, my_controller/pixel_ena_reg, my_controller/v_counter_reg[0], my_controller/v_counter_reg[1] (the first 15 of 24 listed)
 Related violations: <none>
 
 

@@ -23,14 +23,15 @@
 module vga_controller(
 input clk,
 output reg h_sync,
-output reg v_sync
+output reg v_sync,
+output reg pixel_ena
     );
     
     logic [15:0] h_counter;
     logic [15:0] v_counter;
     logic h_sync_signal;
     logic v_sync_signal;
-
+    
     always @ (posedge clk) begin
         begin
             //Counters
@@ -41,6 +42,16 @@ output reg v_sync
                 if(v_counter < 16'd665) v_counter <= v_counter + 1;
                 else v_counter <= 16'd0;
             end
+            
+            //Pixel enable
+            if(h_counter < 16'd800) 
+                begin
+                if(v_counter < 16'd600) 
+                    pixel_ena <= 1'd1;
+                else
+                    pixel_ena <= 1'd0;
+                end
+                
             //h_sync
             if(h_counter < 16'd856)
                 h_sync_signal <= 1'd0;
@@ -60,5 +71,5 @@ output reg v_sync
     end
     assign h_sync = h_sync_signal;
     assign v_sync = v_sync_signal;
-
+    
 endmodule

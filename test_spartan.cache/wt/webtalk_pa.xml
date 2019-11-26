@@ -3,10 +3,10 @@
 <!--The data in this file is primarily intended for consumption by Xilinx tools.
 The structure and the elements are likely to change over the next few releases.
 This means code written to parse this file will need to be revisited each subsequent release.-->
-<application name="pa" timeStamp="Tue Nov 26 19:26:20 2019">
+<application name="pa" timeStamp="Tue Nov 26 20:17:58 2019">
 <section name="Project Information" visible="false">
 <property name="ProjectID" value="706915c6ab75471e89114ff649efb290" type="ProjectID"/>
-<property name="ProjectIteration" value="69" type="ProjectIteration"/>
+<property name="ProjectIteration" value="74" type="ProjectIteration"/>
 </section>
 <section name="PlanAhead Usage" visible="true">
 <item name="Project Data">
@@ -25,11 +25,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="NewProject" value="1" type="JavaHandler"/>
 <property name="OpenProject" value="3" type="JavaHandler"/>
 <property name="ReportTimingSummary" value="1" type="JavaHandler"/>
-<property name="RunBitgen" value="54" type="JavaHandler"/>
+<property name="RunBitgen" value="59" type="JavaHandler"/>
 <property name="RunImplementation" value="20" type="JavaHandler"/>
 <property name="RunSchematic" value="4" type="JavaHandler"/>
 <property name="RunSynthesis" value="20" type="JavaHandler"/>
-<property name="SaveFileProxyHandler" value="8" type="JavaHandler"/>
+<property name="SaveFileProxyHandler" value="9" type="JavaHandler"/>
 <property name="SetSourceEnabled" value="5" type="JavaHandler"/>
 <property name="SetTargetConstrFile" value="2" type="JavaHandler"/>
 <property name="SetTopNode" value="1" type="JavaHandler"/>
@@ -57,10 +57,10 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="AddSrcWizard_SPECIFY_HDL_NETLIST_BLOCK_DESIGN" value="4" type="GuiHandlerData"/>
 <property name="AddSrcWizard_SPECIFY_OR_CREATE_CONSTRAINT_FILES" value="2" type="GuiHandlerData"/>
 <property name="AddSrcWizard_SPECIFY_SIMULATION_SPECIFIC_HDL_FILES" value="2" type="GuiHandlerData"/>
-<property name="BaseDialog_CANCEL" value="67" type="GuiHandlerData"/>
+<property name="BaseDialog_CANCEL" value="71" type="GuiHandlerData"/>
 <property name="BaseDialog_NO" value="2" type="GuiHandlerData"/>
 <property name="BaseDialog_OK" value="215" type="GuiHandlerData"/>
-<property name="BaseDialog_YES" value="48" type="GuiHandlerData"/>
+<property name="BaseDialog_YES" value="54" type="GuiHandlerData"/>
 <property name="ClosePlanner_YES" value="4" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_MESSAGES" value="6" type="GuiHandlerData"/>
 <property name="CmdMsgDialog_OK" value="12" type="GuiHandlerData"/>
@@ -131,7 +131,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="PACommandNames_NEW_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_OPEN_PROJECT" value="1" type="GuiHandlerData"/>
 <property name="PACommandNames_REPORTS_WINDOW" value="1" type="GuiHandlerData"/>
-<property name="PACommandNames_RUN_BITGEN" value="54" type="GuiHandlerData"/>
+<property name="PACommandNames_RUN_BITGEN" value="59" type="GuiHandlerData"/>
 <property name="PACommandNames_RUN_IMPLEMENTATION" value="15" type="GuiHandlerData"/>
 <property name="PACommandNames_RUN_SYNTHESIS" value="16" type="GuiHandlerData"/>
 <property name="PACommandNames_SCHEMATIC" value="1" type="GuiHandlerData"/>
@@ -207,7 +207,7 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="SrcMenu_IP_HIERARCHY" value="32" type="GuiHandlerData"/>
 <property name="SrcMenu_REFRESH_HIERARCHY" value="2" type="GuiHandlerData"/>
 <property name="SyntheticaGettingStartedView_RECENT_PROJECTS" value="5" type="GuiHandlerData"/>
-<property name="SyntheticaStateMonitor_CANCEL" value="2" type="GuiHandlerData"/>
+<property name="SyntheticaStateMonitor_CANCEL" value="3" type="GuiHandlerData"/>
 <property name="TaskBanner_CLOSE" value="52" type="GuiHandlerData"/>
 <property name="TclConsoleView_TCL_CONSOLE_CODE_EDITOR" value="16" type="GuiHandlerData"/>
 <property name="TouchpointSurveyDialog_NO" value="2" type="GuiHandlerData"/>
@@ -219,6 +219,11 @@ This means code written to parse this file will need to be revisited each subseq
 <property name="WaveformView_ADD_MARKER" value="1" type="GuiHandlerData"/>
 <property name="WaveformView_FIND" value="2" type="GuiHandlerData"/>
 <property name="WaveformView_GOTO_CURSOR" value="2" type="GuiHandlerData"/>
+</item>
+<item name="Other">
+<property name="GuiMode" value="3" type="GuiMode"/>
+<property name="BatchMode" value="0" type="BatchMode"/>
+<property name="TclMode" value="2" type="TclMode"/>
 </item>
 </section>
 </application>

@@ -39,7 +39,8 @@ module top(
 
     logic h_sync;
     logic v_sync;
-    vga_controller my_controller(new_clk, h_sync, v_sync);
+    logic pixel_ena;
+    vga_controller my_controller(new_clk, h_sync, v_sync, pixel_ena);
     
     //Some tests
     always @(posedge sys_clk)begin
@@ -49,9 +50,6 @@ module top(
     
     assign IO0 = h_sync;    
     assign IO1 = v_sync;
-    assign IO2 = 1'b1;
-    assign IO3 = 1'b1;
-    assign IO4 = 1'b1;
-
+    assign IO2 = pixel_ena;
     
 endmodule
