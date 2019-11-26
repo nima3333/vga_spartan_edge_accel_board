@@ -1,4 +1,4 @@
-set_property SRC_FILE_INFO {cfile:C:/Users/Esmail/Desktop/test_spartan/test_spartan.srcs/constrs_1/new/pins.xdc rfile:../../../test_spartan.srcs/constrs_1/new/pins.xdc id:1} [current_design]
+set_property SRC_FILE_INFO {cfile:C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.srcs/constrs_1/new/pins.xdc rfile:../../../test_spartan.srcs/constrs_1/new/pins.xdc id:1} [current_design]
 set_property src_info {type:XDC file:1 line:17 export:INPUT save:INPUT read:READ} [current_design]
 set_property PACKAGE_PIN C3 [get_ports {key[0]}]
 set_property src_info {type:XDC file:1 line:18 export:INPUT save:INPUT read:READ} [current_design]

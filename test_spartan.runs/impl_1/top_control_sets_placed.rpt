@@ -1,8 +1,8 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Mon Nov 18 15:08:13 2019
-| Host         : HP-ESMAIL running 64-bit major release  (build 9200)
+| Date         : Tue Nov 26 18:17:14 2019
+| Host         : Demon running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
 | Device       : xc7s15
@@ -70,11 +70,11 @@ Table of Contents
 4. Detailed Control Set Information
 -----------------------------------
 
-+----------------+---------------+------------------+------------------+----------------+
-|  Clock Signal  | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
-+----------------+---------------+------------------+------------------+----------------+
-|  IO1_OBUF_BUFG |               |                  |                2 |              2 |
-|  IO1_OBUF_BUFG |               | ctest5/clear     |                8 |             32 |
-+----------------+---------------+------------------+------------------+----------------+
++--------------------+---------------+------------------+------------------+----------------+
+|    Clock Signal    | Enable Signal | Set/Reset Signal | Slice Load Count | Bel Load Count |
++--------------------+---------------+------------------+------------------+----------------+
+|  sys_clk_IBUF_BUFG |               |                  |                2 |              2 |
+|  sys_clk_IBUF_BUFG |               | ctest3/clear     |                8 |             32 |
++--------------------+---------------+------------------+------------------+----------------+
 
 

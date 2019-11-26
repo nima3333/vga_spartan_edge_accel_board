@@ -42,22 +42,16 @@ module top(
 //    vga_controller my_controller(new_clk, n_reset, h_sync, v_sync);
     //Some tests
     always @(posedge sys_clk)begin
-        LED1 <= !key[0];
-        LED2 <= !key[1];
+        LED1 <= key[0];
+        LED2 <= key[1];
     end
     
-    reg test3;
-    reg test4;
-    reg test5;
-    reg test6;
+    logic test3;
+    
+    clock_divider ctest3(sys_clk, n_reset, test3, 32'd100000000);
+    
+    assign IO0 = test3;    
+    assign IO1 = 1'b1;
 
-    clock_divider ctest3(sys_clk, n_reset, test3, 32'd100);
-    clock_divider ctest4(sys_clk, n_reset, test4, 32'd1000);
-    clock_divider ctest5(sys_clk, n_reset, test5, 32'd10000);
-    clock_divider ctest6(sys_clk, n_reset, test6, 32'd100000000);
-    
-    assign IO0 = test5;
-    assign IO1 = sys_clk;
-    
     
 endmodule

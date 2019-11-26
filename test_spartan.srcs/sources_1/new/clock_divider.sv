@@ -31,12 +31,10 @@ module clock_divider(
     
     always @(posedge clk)
     begin
-     if(!reset_n) counter <= 32'd0;
-     else begin
+
          counter <= counter + 32'd1;
          if(counter >= (divider - 32'd1))
           counter <= 32'd0;
-     end
     end
     assign new_clk = (counter<divider/2) ? 1'b0 : 1'b1;
     

@@ -60,7 +60,6 @@ proc step_failed { step } {
   close $ch
 }
 
-set_msg_config -id {Common 17-41} -limit 10000000
 
 start_step init_design
 set ACTIVE_STEP init_design
@@ -70,12 +69,12 @@ set rc [catch {
   create_project -in_memory -part xc7s15ftgb196-1
   set_property design_mode GateLvl [current_fileset]
   set_param project.singleFileAddWarning.threshold 0
-  set_property webtalk.parent_dir C:/Users/Esmail/Desktop/test_spartan/test_spartan.cache/wt [current_project]
-  set_property parent.project_path C:/Users/Esmail/Desktop/test_spartan/test_spartan.xpr [current_project]
-  set_property ip_output_repo C:/Users/Esmail/Desktop/test_spartan/test_spartan.cache/ip [current_project]
+  set_property webtalk.parent_dir C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.cache/wt [current_project]
+  set_property parent.project_path C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.xpr [current_project]
+  set_property ip_output_repo C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.cache/ip [current_project]
   set_property ip_cache_permissions {read write} [current_project]
-  add_files -quiet C:/Users/Esmail/Desktop/test_spartan/test_spartan.runs/synth_1/top.dcp
-  read_xdc C:/Users/Esmail/Desktop/test_spartan/test_spartan.srcs/constrs_1/new/pins.xdc
+  add_files -quiet C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.runs/synth_1/top.dcp
+  read_xdc C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.srcs/constrs_1/new/pins.xdc
   link_design -top top -part xc7s15ftgb196-1
   close_msg_db -file init_design.pb
 } RESULT]
