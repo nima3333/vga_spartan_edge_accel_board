@@ -3,7 +3,7 @@
 <!--                                                         -->
 <!-- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.   -->
 
-<Project Version="7" Minor="44" Path="C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.xpr">
+<Project Version="7" Minor="44" Path="C:/Users/nima/Desktop/vga_spartan_edge_accel_board/test_spartan.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
     <Option Name="Id" Val="3ff6383f5e9d48b7ad00747e9f0617ce"/>

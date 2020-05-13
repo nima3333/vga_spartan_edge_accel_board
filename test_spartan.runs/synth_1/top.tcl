@@ -23,16 +23,16 @@ create_project -in_memory -part xc7s15ftgb196-1
 set_param project.singleFileAddWarning.threshold 0
 set_param project.compositeFile.enableAutoGeneration 0
 set_param synth.vivado.isSynthRun true
-set_property webtalk.parent_dir C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.cache/wt [current_project]
-set_property parent.project_path C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.xpr [current_project]
+set_property webtalk.parent_dir C:/Users/nima/Desktop/vga_spartan_edge_accel_board/test_spartan.cache/wt [current_project]
+set_property parent.project_path C:/Users/nima/Desktop/vga_spartan_edge_accel_board/test_spartan.xpr [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language Verilog [current_project]
-set_property ip_output_repo c:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.cache/ip [current_project]
+set_property ip_output_repo c:/Users/nima/Desktop/vga_spartan_edge_accel_board/test_spartan.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
 read_verilog -library xil_defaultlib -sv {
-  C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.srcs/sources_1/new/clock_divider.sv
-  C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.srcs/sources_1/new/vga_controller.sv
-  C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.srcs/sources_1/new/top.sv
+  C:/Users/nima/Desktop/vga_spartan_edge_accel_board/test_spartan.srcs/sources_1/new/clock_divider.sv
+  C:/Users/nima/Desktop/vga_spartan_edge_accel_board/test_spartan.srcs/sources_1/new/vga_controller.sv
+  C:/Users/nima/Desktop/vga_spartan_edge_accel_board/test_spartan.srcs/sources_1/new/top.sv
 }
 # Mark all dcp files as not used in implementation to prevent them from being
 # stitched into the results of this synthesis run. Any black boxes in the
@@ -42,8 +42,8 @@ read_verilog -library xil_defaultlib -sv {
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
-read_xdc C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.srcs/constrs_1/new/pins.xdc
-set_property used_in_implementation false [get_files C:/Users/Nima/Documents/vga_spartan_edge_accel_board/test_spartan.srcs/constrs_1/new/pins.xdc]
+read_xdc C:/Users/nima/Desktop/vga_spartan_edge_accel_board/test_spartan.srcs/constrs_1/new/pins.xdc
+set_property used_in_implementation false [get_files C:/Users/nima/Desktop/vga_spartan_edge_accel_board/test_spartan.srcs/constrs_1/new/pins.xdc]
 
 set_param ips.enableIPCacheLiteLoad 1
 close [open __synthesis_is_running__ w]

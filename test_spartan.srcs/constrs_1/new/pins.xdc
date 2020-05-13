@@ -30,3 +30,5 @@ set_property PACKAGE_PIN B14 [get_ports IO6]
 #set_property PACKAGE_PIN P5 [get_ports IO8]
 #set_property PACKAGE_PIN E11 [get_ports IO9]
 set_property PACKAGE_PIN A2 [get_ports n_reset]
+
+create_clock -period 10.000 -name sys_clk -waveform {0.000 5.000} [get_ports sys_clk]

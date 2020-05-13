@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Tue Nov 26 20:15:13 2019
+| Date         : Wed May 13 21:56:16 2020
 | Host         : Demon running 64-bit major release  (build 9200)
 | Command      : report_control_sets -verbose -file top_control_sets_placed.rpt
 | Design       : top
@@ -60,8 +60,8 @@ Table of Contents
 +--------------+-----------------------+------------------------+-----------------+--------------+
 | No           | No                    | No                     |               2 |            2 |
 | No           | No                    | Yes                    |               0 |            0 |
-| No           | Yes                   | No                     |              45 |           14 |
-| Yes          | No                    | No                     |               6 |            4 |
+| No           | Yes                   | No                     |              45 |           13 |
+| Yes          | No                    | No                     |               6 |            3 |
 | Yes          | No                    | Yes                    |               0 |            0 |
 | Yes          | Yes                   | No                     |               5 |            2 |
 +--------------+-----------------------+------------------------+-----------------+--------------+
@@ -77,9 +77,9 @@ Table of Contents
 |  divider/CLK       |                                     | my_controller/h_sync_signal_i_1_n_0 |                1 |              1 |
 |  divider/CLK       | my_controller/p_0_in                |                                     |                1 |              1 |
 |  sys_clk_IBUF_BUFG |                                     |                                     |                2 |              2 |
-|  divider/CLK       | my_controller/h_counter[10]_i_1_n_0 |                                     |                3 |              5 |
+|  divider/CLK       | my_controller/h_counter[10]_i_1_n_0 |                                     |                2 |              5 |
 |  divider/CLK       | my_controller/h_counter[10]_i_1_n_0 | my_controller/v_counter             |                2 |              5 |
-|  divider/CLK       |                                     | my_controller/h_counter[10]_i_1_n_0 |                4 |             11 |
+|  divider/CLK       |                                     | my_controller/h_counter[10]_i_1_n_0 |                3 |             11 |
 |  sys_clk_IBUF_BUFG |                                     | divider/clear                       |                8 |             32 |
 +--------------------+-------------------------------------+-------------------------------------+------------------+----------------+
 
